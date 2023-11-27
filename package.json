@@ -12,7 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "lodash": "^4.17.21",
+    "sass": "^1.69.5",
     "vitepress": "1.0.0-rc.31",
     "vue": "^3.3.9"
+  },
+  "dependencies": {
+    "@mdit-vue/shared": "^1.0.0",
+    "element-plus": "^2.4.3"
   }
 }
