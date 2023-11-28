@@ -10,8 +10,8 @@ hero:
     alt: jinx
   actions:
     - theme: brand
-      text:  Welcome!
-      link: /colorfulLife/
+      text:  个人简历
+      link: /resume/
     - theme: alt
       text: Github
       link: https://github.com/jinxmagnet/jinx

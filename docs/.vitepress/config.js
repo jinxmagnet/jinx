@@ -1,13 +1,14 @@
 import { reactSidebar } from "./frontend/reactSidebar";
 import { nextSidebar } from "./frontend/nextSidebar";
+import { nuxtSidebar } from "./frontend/nuxtSidebar";
+import { electronSidebar } from "./frontend/electronSidebar";
 import { tauriSidebar } from "./frontend/tauriSidebar";
 import { cssSidebar } from "./frontend/cssSidebar";
 import { nestjsSidebar } from "./backend/nestjsSiderbar";
 import { nginxSidebar } from "./backend/nginxSidebar";
 import { gitSidebar } from "./backend/gitSidebar";
 import { nodeSidebar } from "./backend/nodeSidebar";
-import { cppSidebar } from "./backend/cppSidebar";
-import { csharpSidebar } from "./backend/csharpSidebar";
+import { workSidebar } from "./work/workSidebar";
 export default {
   title: 'jinx', // 博客的标题
   description: 'jinx 的个人博客', // 博客的介绍
@@ -26,7 +27,7 @@ export default {
         activeMatch: 'frontend',
         items:[
           {
-            text: '基本功',
+            text: '基础',
             items:[
               {text: 'Html', link:'/articles/frontend/html/'},
               {text: 'CSS', link:'/articles/frontend/css/'},
@@ -39,8 +40,15 @@ export default {
             items:[
               {text: 'React', link:'/articles/frontend/react/'},
               {text: 'NextJS', link:'/articles/frontend/next/'},
-              {text: 'Vue', link:'/articles/frontend/vue/'},
-              {text: 'Tauri', link:'/articles/frontend/tauri/'},
+              {text: 'Vue', link: '/articles/frontend/vue/'},
+              {text: 'Nuxt', link:'/articles/frontend/nuxt/'}
+            ]
+          },
+          {
+            text: 'PC端',
+            items:[
+              {text: 'Electron', link:'/articles/frontend/electron/'},
+              {text: 'tauri', link:'/articles/frontend/tauri/'},
             ]
           },
           {
@@ -59,9 +67,7 @@ export default {
             text: '嗨你好吗',
             items:[
               {text: 'Node.js', link:'/articles/backend/nodejs/'},
-              {text: 'NestJS', link:'/articles/backend/nestjs/'},
-              {text: 'C++', link:'/articles/backend/CPP/'},
-              {text: 'C#&NET', link:'/articles/backend/Csharp/'},
+              {text: 'NestJS', link:'/articles/backend/nestjs/'}
             ]
           },
           {
@@ -72,21 +78,27 @@ export default {
             ]
           },
         ]
-      }
+      },
+      {
+        text: '面试',
+        link: '/articles/work/',
+      },
     ],
     sidebar: { // 侧边栏，可以分组
       // 前端
 		  '/articles/frontend/react/': reactSidebar,
 		  '/articles/frontend/next/': nextSidebar,
+		  '/articles/frontend/nuxt/': nuxtSidebar,
+      '/articles/frontend/css/': cssSidebar,
+      // PC端
+      '/articles/frontend/electron/': electronSidebar,
 		  '/articles/frontend/tauri/': tauriSidebar,
-		  '/articles/frontend/css/': cssSidebar,
 		  // 后端
 		  '/articles/backend/nestjs/': nestjsSidebar,
 		  '/articles/backend/nginx/': nginxSidebar,
 		  '/articles/backend/gitLearn/': gitSidebar,
 		  '/articles/backend/nodejs/': nodeSidebar,
-		  '/articles/backend/CPP/': cppSidebar,
-		  '/articles/backend/Csharp/': csharpSidebar,
+      '/articles/work/': workSidebar
     },
     editLink: {
 			pattern: 'https://github.com/jinxmagnet/jinx',

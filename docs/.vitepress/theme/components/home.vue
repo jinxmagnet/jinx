@@ -38,7 +38,7 @@ const data = {
 <style lang="scss">
 /**首页网址推荐**/
 .ui-home {
-  width: 1152px;
+  max-width: 1152px;
   margin: 60px auto 20px;
   .ui-title {
     display: flex;
@@ -56,7 +56,8 @@ const data = {
 	margin-top: 20px;
   .item,
   .link {
-    height: 250px;
+    height: auto;
+    min-height: 250px;
   }
   .item {
     .link {
@@ -65,22 +66,24 @@ const data = {
       background: #fff;
       border: 1px solid #f1f1f1;
       border: none;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
-      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+      border-radius: 12px;
       transition: .4s;
       overflow: hidden;
     }
     .link:hover {
-      box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+      box-shadow: 0 5px 30px 5px rgba(0, 0, 0, .1);
       border: none;
     }
     .title {
-      height: 136.5px;
+      height: auto;
       font-size: 24px;
       color: #fff;
       text-align: center;
-      border-radius: 6px 6px 0 0;
+      border-radius: 12px 12px 0 0;
       img {
+        border: 4px solid #fff;
+        border-radius: 12px 12px 0 0;
         width: 100%;
       }
     }

@@ -1,7 +1,17 @@
 /**
   网址导航页面样式
 **/
-
+/* 隐藏标准的滚动条 */
+html::-webkit-scrollbar {
+  width: 0;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+/* 隐藏 IE 和 Edge 浏览器的滚动条 */
+::-ms-scrollbar {
+  width: 0;
+}
 .site-layout {
 
   .VPDoc {
