@@ -1,18 +1,29 @@
 ---
-  layout: home
-  hero:
-    image: 
-      src: /logo.png
-      alt: 前端吧
-    name: 前端吧
-    text: 关注web前端开发为主的博客网站和网址导航
-    tagline: 收集有一大批前端相关的技术网站，包括Vue、React等技术资料的生态网站，方便快速访问。
-    actions:
+layout: home
+
+hero:
+  name: jinx
+  text: jinx的个人博客
+  tagline: 我有最美好的初衷
+  image:
+    src: /images/logo.png
+    alt: jinx
+  actions:
     - theme: brand
-      text: 开始使用
-      link: /guide/start
+      text:  Welcome!
+      link: /colorfulLife/
     - theme: alt
-      text: 前端吧官网
-      link: http://qianduan8.com/
+      text: Github
+      link: https://github.com/jinxmagnet/jinx
+features:
+  - icon: ‍💻‍
+    title: 前端开发从业者
+    details: 喜欢学一些感兴趣的技术
+  - icon: 🌟
+    title: 学过的技术
+    details: JS,Vue,React,TS,Nodejs,Nestjs,Electron...
+  - icon: 🔋
+    title: 想学的技术
+    details: Flutter,Harmony...
 ---
-<Home />
+<home/>

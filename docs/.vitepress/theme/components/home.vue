@@ -1,10 +1,12 @@
 <template>
   <div class="ui-home">
-    <h2 class="ui-title">前端开源项目推荐</h2>
+    <h2 class="ui-title">前端知识库</h2>
     <ul class="ui-project">
       <li class="item" v-for="v in siteData" :key="v.name">
         <a class="link" :href="v.link" target="_blank">
-          <h3 :class="['title', v.className]">{{ v.name }}</h3>
+          <div class="title">
+            <img :src="data[v.name]" alt="">
+          </div>
           <p class="desc">{{ v.desc }}</p>
         </a>
       </li>
@@ -14,35 +16,30 @@
 </template>
 <script setup>
 import { siteData } from '../model/siteData.js'
-
+import tailwindcss from '../img/tailwindcss.png'
+import vuejs from '../img/vuejs.png'
+import react from '../img/react.png'
+import typescript from '../img/typescript.png'
+import vite from '../img/vite.png'
+import vitest from '../img/vitest.png'
+import pinia from '../img/pinia.png'
+import antdesign from '../img/antdesign.png'
+const data = {
+  'tailwindcss': tailwindcss,
+  'vuejs': vuejs,
+  'react': react,
+  'typescript': typescript,
+  'vite': vite,
+  'vitest': vitest,
+  'pinia': pinia,
+  'antdesign': antdesign
+}
 </script>
 <style lang="scss">
-.color-pink1 {background: #90f;}
-.color-red {background: #b91d47;}
-.color-blue-deep4 {background: #3360a3;}
-.color-blue-light6 {background: #2db7f5;}
-.color-green-gradient1{
-	background: -webkit-linear-gradient(120deg, #86b91a 30%, #edd532);
-	background: linear-gradient(120deg, #86b91a 30%, #edd532);
-}
-.color-green-gradient2{
-	background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
-	background: linear-gradient(315deg, #42d392 25%, #647eff);
-}
-.color-green-gradient3{
-	background: -webkit-linear-gradient(315deg, #51a256 25%, #f7d336);
-	background: linear-gradient(315deg, #51a256 25%, #f7d336);
-}
-.color-pink-gradient {
-	background: -webkit-linear-gradient(120deg, #bd44fe 35%, #42d1ff);
-	background: linear-gradient(120deg, #bd44fe 35%, #42d1ff);
-}
-
-
 /**首页网址推荐**/
 .ui-home {
   width: 1152px;
-  margin: 0 auto 20px;
+  margin: 60px auto 20px;
   .ui-title {
     display: flex;
     align-items: center;
@@ -59,7 +56,7 @@ import { siteData } from '../model/siteData.js'
 	margin-top: 20px;
   .item,
   .link {
-    height: 220px;
+    height: 250px;
   }
   .item {
     .link {
@@ -67,21 +64,25 @@ import { siteData } from '../model/siteData.js'
       color: #333;
       background: #fff;
       border: 1px solid #f1f1f1;
+      border: none;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
       border-radius: 6px;
-      transition: all .4s;
+      transition: .4s;
+      overflow: hidden;
     }
     .link:hover {
-      -webkit-filter: brightness(1.2);
       box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
-      transform: rotateY(-0.1deg) scale(1.03) translateZ(0);
+      border: none;
     }
     .title {
-      height: 80px;
-      padding-top: 25px;
+      height: 136.5px;
       font-size: 24px;
       color: #fff;
       text-align: center;
       border-radius: 6px 6px 0 0;
+      img {
+        width: 100%;
+      }
     }
     .desc {
       line-height: 2;

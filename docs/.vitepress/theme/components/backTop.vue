@@ -4,8 +4,9 @@
   </div>
 </template>
 <script setup>
+  import debounce from "lodash.debounce";
   import { ref, onMounted, onUnmounted } from "vue";
-  import "../../../font/iconfont.css";
+  import "../../../public/font/iconfont.css";
   function onScroll() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -17,7 +18,9 @@
   onMounted(() => {
     window.addEventListener(
       "scroll",
-      handleScroll()
+      debounce(() => {
+        handleScroll();
+      }, 100),
     );
   });
   onUnmounted(() => {
