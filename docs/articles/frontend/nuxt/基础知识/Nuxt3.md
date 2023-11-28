@@ -543,7 +543,7 @@ export default defineEventHandler(() => {
 })
 ```
 
-可通过 http://localhost:3000/api/channel 访问以上频道接口， 文件名的后缀可以是 `.get`, `.post`, `.put`, `.delete` 等，以匹配请求的 HTTP 方法 。
+可通过 `http://localhost:3000/api/channel` 访问以上频道接口， 文件名的后缀可以是 `.get`, `.post`, `.put`, `.delete` 等，以匹配请求的 HTTP 方法 。
 
 参考资料：
 
