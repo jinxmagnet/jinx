@@ -6,7 +6,7 @@ hero:
   text: jinx的个人博客
   tagline: 我有最美好的初衷
   image:
-    src: /images/logo.png
+    src: /images/index.png
     alt: jinx
   actions:
     - theme: brand

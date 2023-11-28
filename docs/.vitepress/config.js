@@ -15,7 +15,7 @@ export default {
 	deadLinks:true,
 	lastUpdated:true,
   themeConfig: {
-    logo: "/public/images/logo.png", // 页面上显示的logo
+    logo: "/images/logo.png", // 页面上显示的logo
     nav: [ // 页面右上角的导航
       {
         text: '首页',
