@@ -106,8 +106,9 @@ export default {
     },
     // 搜索
     algolia: {
-      apiKey: "your_api_key",
-      indexName: "index_name",
+      apiKey: "3fd76eea453ef54979178dab4b316176",
+      indexName: "jinx",
+      appId: "Q0BFEO0JV8"
     },
     returnToTopLabel: "返回顶部",
     lastUpdatedText: 'Updated Date',
