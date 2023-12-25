@@ -2,6 +2,7 @@ import { reactSidebar } from "./frontend/reactSidebar";
 import { nextSidebar } from "./frontend/nextSidebar";
 import { nuxtSidebar } from "./frontend/nuxtSidebar";
 import { electronSidebar } from "./frontend/electronSidebar";
+import { vueSidebar } from "./frontend/vueSidebar";
 import { tauriSidebar } from "./frontend/tauriSidebar";
 import { cssSidebar } from "./frontend/cssSidebar";
 import { nestjsSidebar } from "./backend/nestjsSiderbar";
@@ -88,6 +89,7 @@ export default {
       // 前端
 		  '/articles/frontend/react/': reactSidebar,
 		  '/articles/frontend/next/': nextSidebar,
+		  '/articles/frontend/vue/': vueSidebar,
 		  '/articles/frontend/nuxt/': nuxtSidebar,
       '/articles/frontend/css/': cssSidebar,
       // PC端
